@@ -168,9 +168,7 @@ body {
  .social_links div{
    margin: 5px;
  }
- .block2_wrapper{
-   height: 900px;
- }
+
  .main_text_block h1{
    font-family: 'Inter';
    font-weight: 400;
@@ -193,6 +191,125 @@ body {
     position: absolute;
 
 
+ }
+ .block2{
+   display: flex;
+   max-width: 1920px;
+   padding: 100px 143px 100px 132px;
+   margin: 0 auto;
+   justify-content: space-between;
+ }
+ .line{
+   height: 2px;
+   width: 100%;
+   background: hsla(175, 66%, 51%, 1);
+   border: none;
+   position: relative;
+   top: -2px;
+ }
+ .block2_img{
+   width: fit-content;
+   border-radius: 10px;
+   border-width: 2px;
+   display: flex;
+    margin: auto 0;
+
+ }
+ .block2_img.a1 img{
+   margin: 0 18px;
+ }
+ .block2_txt h3,
+ .block3_header h3{
+   font-family: 'DM Sans';
+   font-weight: 300;
+   font-size: 17px;
+   leading-trim: Cap height;
+   line-height: 100%;
+   letter-spacing: 0;
+   text-transform: uppercase;
+   color: hsla(175, 66%, 51%, 1);
+   margin-bottom: 13px;
+ }
+ .block2_txt h2,
+ .block3_header h2{
+   font-family: 'Inter';
+   font-weight: 400;
+   font-size: 30px;
+   leading-trim: Cap height;
+   line-height: 100%;
+   letter-spacing: 0;
+   text-transform: uppercase;
+   color: hsla(0, 0%, 100%, 1);
+   margin-bottom: 50px;
+
+
+ }
+ .block2_txt_p,
+ .block3_header p {
+   font-family: 'Inter';
+   font-weight: 400;
+   font-size: 16px;
+   leading-trim: Cap height;
+   line-height: 150%;
+   letter-spacing: 0;
+   color: hsla(0, 0%, 100%, 1);
+ 
+
+
+ }
+ .item{
+   display: flex;
+ }
+ .item p {
+   font-family: 'Inter';
+   font-weight: 400;
+   font-size: 16px;
+   leading-trim: Cap height;
+   line-height: 180%;
+   letter-spacing: 0;
+   color: hsla(0, 0%, 100%, 1);
+
+
+ }
+ .block2_txt{
+   max-width: 675px;
+    width: 100%;
+ }
+ .list_items{
+   margin: 33px 0;
+ }
+ .item img{
+   margin-right: 10px;
+   
+ }
+ .block2_img img{
+   width: 100%;
+ }
+ .block2_txt.a2 {
+   max-width: 694px;
+    width: 100%;
+    margin: auto 0;
+ }
+ .block3 {
+    display: flex;
+    max-width: 1920px;
+    padding: 100px 132px 100px 132px;
+    margin: 0 auto;
+ }
+ .block2.a3{
+   padding: 100px 194px 100px 194px;
+ }
+ .block3_header{
+   margin: 0 auto;
+ }
+ .block3_header h3,
+ .block3_header h2{
+   text-align: center;
+ }
+ .block3_header p {
+   width: 458px;
+   text-align: center;
+   margin: 0 auto;
  }
 
 
