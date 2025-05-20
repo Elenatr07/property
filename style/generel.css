@@ -7,6 +7,16 @@
 a {
     text-decoration: none;
  }
+ a, 
+ a:hover, 
+ a:visited { color: inherit; text-decoration: none; }
+
+ input {
+  all: unset;
+  margin: 0;
+  padding: 0;
+}
+
  
  ul {
     list-style: none;
@@ -219,7 +229,8 @@ body {
    margin: 0 18px;
  }
  .block2_txt h3,
- .block3_header h3{
+ .block3_header h3,
+ .contacts_info h3{
    font-family: 'DM Sans';
    font-weight: 300;
    font-size: 18px;
@@ -232,7 +243,8 @@ body {
  }
  .block2_txt h2,
  .block3_header h2,
- .block3_txt h2{
+ .block3_txt h2,
+ .contacts_info h2{
    font-family: 'Inter';
    font-weight: 400;
    font-size: 30px;
@@ -247,7 +259,9 @@ body {
  }
  .block2_txt_p,
  .block3_header p,
- .block3_txt p {
+ .block3_txt p,
+ .contacts_info p,
+ .contacts_link a {
    font-family: 'Inter';
    font-weight: 400;
    font-size: 18px;
@@ -300,8 +314,11 @@ body {
     padding: 100px 132px 100px 132px;
     margin: 0 auto;
  }
- .block2.a3{
+ .block2.a3,
+ .contact_block{
    padding: 100px 194px 100px 194px;
+   max-width:1920px;
+   margin: 0 auto;
  }
  .block3_header{
    margin: 0 auto;
@@ -362,7 +379,64 @@ body {
 .block2_img.a1 img{
    width: 100%;
 }
+.contact_block_items{
+   display: flex;
+   justify-content: space-between;
+}
+.contacts_link div{
+   width: 100px;
+   height: 100px;
+   border: 2px solid hsla(0, 0%, 100%, 1);
+   border-radius: 10px;
+   display: flex;
 
+}
+.contacts_link div img{
+   display: block;
+   margin: auto;
+   text-align: center;
+}
+.contacts_link{
+   display: flex;
+   margin-top: 31px;
+}
+.contacts_link a{
+   display: block;
+   margin: auto 0 auto 45px;
+}
+.phone_link{
+   cursor: none;
+}
+.input {
+   width: 100%;
+   max-width: 774px;
+   border-width: 2px;
+   border-radius: 10px;
+   border: 2px solid hsla(0, 2%, 72%, 1);
+   padding: 42px 47px;
+   box-sizing: border-box;
+
+}
+.input::placeholder{
+   font-family: 'Inter';
+   font-weight: 400;
+   font-size: 20px;
+   leading-trim: Cap height;
+   line-height: 100%;
+   letter-spacing: 0;
+   text-transform: uppercase;
+
+}
+.name{
+   margin: 32px 0;
+       width: 774px;
+    max-width: 100%;
+}
+.contacts_info{
+   width: 100%;
+   max-width: 498px;
+   margin: auto 0;
+}
 
 
 
