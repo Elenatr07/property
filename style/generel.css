@@ -407,14 +407,26 @@ body {
 .phone_link{
    cursor: none;
 }
-.input {
+#formname,
+#formtel,
+#formemail {
    width: 100%;
    max-width: 774px;
    border-width: 2px;
    border-radius: 10px;
-   border: 2px solid hsla(0, 2%, 72%, 1);
+   border: 2px solid hsla(0, 2%, 72%, 1); /*error #ff5e00*/
    padding: 42px 47px;
    box-sizing: border-box;
+   color: hsla(0, 0%, 100%, 1);
+   font-family: 'Inter';
+  font-weight: 400;
+  font-size: 20px;
+  leading-trim: Cap height;
+  line-height: 100%;
+  letter-spacing: 0;
+  margin-bottom: 10px;
+  height: 100px;
+ 
 
 }
 .input::placeholder{
@@ -428,15 +440,69 @@ body {
 
 }
 .name{
-   margin: 32px 0;
+   margin: 22px 0;
        width: 774px;
     max-width: 100%;
+}
+.name:first-child{
+  margin: 0 0 22px 0;
 }
 .contacts_info{
    width: 100%;
    max-width: 498px;
    margin: auto 0;
 }
+.button_form{
+  width: 197px;
+  height: 55px;
+  border-radius: 10px;
+  background: hsla(0, 2%, 72%, 1);
+}
+.button_active{
+  background: hsla(175, 66%, 51%, 1);
+
+}
+.error{
+  color: #ff5e00;
+  font-family: 'Inter';
+   font-weight: 400;
+   font-size: 16px;
+   leading-trim: Cap height;
+   line-height: 100%;
+   letter-spacing: 0;
+ }
+ footer{
+  height: 116px;
+
+ }
+ .footer_block div,
+ .footer_block a{
+  font-family: 'Inter';
+  font-weight: 300;
+  font-size: 16px;
+  leading-trim: Cap height;
+  line-height: 100%;
+  letter-spacing: 0;
+  color: hsla(0, 0%, 100%, 1);
+  width: 33%;
+  text-align: center;
+
+ }
+ .footer_block{
+  display: flex;
+  justify-content: center;
+  padding-top: 52px;
+ }
+ .footer_block a span{
+  font-family: 'Montserrat';
+  font-weight: 500;
+  font-size: 16px;
+  leading-trim: Cap height;
+  line-height: 100%;
+  letter-spacing: 0%;
+
+ }
+ 
 
 
 

@@ -30,18 +30,34 @@ $(document).ready(function () {
 
 				error: function () {
 					form.find('.status').html('Error');
+					
 				}
 			});
 		}
+		if($('#formname').hasClass('error')){
+			$('#formname').css('border', '2px solid  #ff5e00')
+			console.log('has error')
+		}
+	
 
 	});
 
 
 });
+
+$(form).on('change', function(){
+	let marker = $('#formname').hasClass('error')
+	if(!marker)
+	 
+			$('#formname').css('border', '2px solid  hsla(0, 2%, 72%, 1)')
+			console.log('no has error')
+		
+})
+	
 function clearform() {
 	$('#formname').val("") 
 	$('#formemail').val("")
-	$('#formtext').val("")
+	$('#formtel').val("")
 	
 }
 
