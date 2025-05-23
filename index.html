@@ -31,7 +31,6 @@
             <img src="img/whatsapp.svg" alt=""
           /></a>
         </div>
-   
       </div>
 
       <div class="up_block">
@@ -251,7 +250,8 @@
                   </div>
 
                   <a href="mailto:sehgalhomesproject@gmail.com"
-                    >sehgalhomesproject@gmail.com</a>
+                    >sehgalhomesproject@gmail.com</a
+                  >
                 </div>
                 <div class="contacts_link">
                   <div>
@@ -259,7 +259,8 @@
                   </div>
 
                   <a class="phone_link" href="tel:+918800110831"
-                    >+91 880 011 08 31</a>
+                    >+91 880 011 08 31</a
+                  >
                 </div>
               </div>
             </div>
@@ -297,15 +298,29 @@
                 </div>
                 <div class="status"></div>
                 <div class="button_wrapper">
-                  <button type="button" class="button_form" id="send-form">
+                  <button
+                    type="button"
+                    class="button_form"
+                    id="send-form"
+                    disabled
+                   onclick="setTimeout('clearform()', 2000 );" 
+                  >
                     Submit
                   </button>
                 </div>
               </form>
             </div>
           </div>
+          <div class="result">
+            <span class="close">
+
+            </span>
+            <div></div>
+            
+          </div>
         </div>
       </div>
+
       <hr class="line" />
       <footer>
         <div class="footer_block">
@@ -321,6 +336,7 @@
     <script src="scripts/jq_3.3.1.min.js"></script>
     <script src="scripts/validate.js"></script>
     <script src="scripts/check_form.js"></script>
+
     <script src="scripts/general.js"></script>
   </body>
 </html>

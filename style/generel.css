@@ -312,6 +312,9 @@ body {
   max-width: 1920px;
   margin: 0 auto;
 }
+.contact_block{
+  position: relative;
+}
 .block3_header {
   margin: 0 auto;
 }
@@ -453,9 +456,11 @@ body {
   line-height: 100%;
   letter-spacing: 0%;
   text-transform: uppercase;
+  
 }
 .button_active {
   background: hsla(175, 66%, 51%, 1);
+  cursor: pointer;
 }
 .error {
   color: #ff5e00;
@@ -585,6 +590,79 @@ footer {
 .social_links div:hover{
   transform: scale(0.95); 
 }
+.result{
+  width: 500px;
+  height: 276px;
+  border-radius: 10px;
+  background: #30D5C8;
+  padding: 30px 30px;
+  position: absolute;
+   top:  50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+  display: none;
+  z-index: 12;
+
+
+}
+.result div h3{
+  font-family: 'Inter';
+  font-weight: 400;
+  font-size: 50px;
+  leading-trim: Cap height;
+  line-height: 100%;
+  letter-spacing: 0;
+  text-align: center;
+  text-transform: uppercase;
+  color:  #000000;
+
+}
+.result div p{
+  font-family: 'Inter';
+  font-weight: 400;
+  font-size: 20px;
+  leading-trim: Cap height;
+  line-height: 150%;
+  letter-spacing: 0;
+  text-align: center;
+  color:  #000000;
+  margin-top: 20px;
+
+}
+.close::before, .close::after{
+  content: "";
+    display: block;
+    height: 100%;
+    position: absolute;
+    transition: all 0.2s ease-out;
+    width: 100%;
+    background: #0D0000;
+    transform: matrix(1, 0, 0, -1, 0, 0);
+    border-radius: 10px;
+    
+    top: 0;
+}
+.close::before{
+  transform: rotate(-45deg);
+}
+.close::after{
+  transform: rotate(45deg);
+}
+
+.close{
+  display: block;
+    height: 5px;
+    position: relative;
+    width: 35px;
+    float: right;
+    transform: matrix(1, 0, 0, -1, 0, 0);
+    border-radius: 10px;
+}
+.result div{
+  margin: 30px;
+}
+
+
 
 @media (min-width: 1026px) {
   .hamb {
