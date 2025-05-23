@@ -22,7 +22,7 @@ $(document).ready(function(){
     } 
     })
     if(width <600){
-        $('.main_text_b h1').text('Building Dreams Brick By Brick')
+        $('.main_text_b h1').text('Building Dreams, Brick By Brick')
         $('.block3_header p').text('Booking for our newest Project “THE SERENITY RESIDENCE“ have now begun')
     }
     if(width <400){
