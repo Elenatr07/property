@@ -87,4 +87,7 @@ function clearform() {
   $("#formname").val("");
   $("#formemail").val("");
   $("#formtel").val("");
+  $('input').css('border', '2px solid hsla(0, 2%, 72%, 1)' );
+  $("#send-form").attr("disabled");
+   $("#send-form").removeClass("button_active");
 }

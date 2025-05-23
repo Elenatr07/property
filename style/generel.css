@@ -1055,6 +1055,18 @@ footer {
   .input::placeholder {
     font-size: 16px;
   }
+  .result{
+    width: 370px;
+  }
+  .result div h3{
+    font-size: 40px;
+  }
+  .result div p {
+    font-size: 18px;
+  }
+  .result div {
+    margin: 30px 20px 20px 20px;
+  }
 }
 @media (max-width: 700px) {
   .main_text_b h1 {
@@ -1144,6 +1156,22 @@ footer {
   .main_text_b {
     padding: 50px 30px;
   }
+      .result div h3 {
+        font-size: 38px;
+    }
+    .result div p {
+        font-size: 17px;
+    }
+        .result {
+        width: 300px;
+        padding: 30px 20px;
+    }
+    .close {
+      width: 30px;
+    }
+        .result div {
+        margin: 30px 10px 10px 10px;
+    }
 }
 @media (max-width: 450px) {
   .main_text_b h1 {
@@ -1276,6 +1304,17 @@ footer {
   .header_logo img  {
     width: 240px;
   }
+      .result div h3 {
+        font-size: 36px;
+    }
+        .result div p {
+        font-size: 15px;
+    }
+        .result {
+        width: 280px;
+        padding: 30px 10px;
+            height: 250px;
+    }
 }
 @media (max-width: 350px) {
   .block2_txt_p,
