@@ -1049,6 +1049,7 @@ footer {
 @media (max-width: 500px) {
   .main_text_b h1 {
     font-size: 51px;
+    letter-spacing: 5px;
   }
   .main_text_b {
     padding: 50px 30px;
@@ -1057,7 +1058,7 @@ footer {
 @media (max-width: 450px) {
   .main_text_b h1 {
     font-size: 50px;
-    letter-spacing: 5px;
+    letter-spacing: 4px;
   }
   .main_text_b {
     padding: 50px 18px;
@@ -1124,7 +1125,7 @@ footer {
 }
 @media (max-width: 390px) {
   .main_text_b h1 {
-    font-size: 46px;
+    font-size: 45px;
   }
   .block2,
   .block2.a3,
