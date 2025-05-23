@@ -1,22 +1,24 @@
 <?php
     $name = $_POST['name'];
-    $phone = $_POST['phone'];
+    $phone = $_POST['tel'];
     $email = $_POST['email'];
-    $text = $_POST['text'];
+    $text = 'This customer filled out the feedback form from the site and asked to contact him.';
+   
 
 	$to = "energotr07@yandex.ru"; 
 	$date = date ("d.m.Y"); 
 	$time = date ("h:i");
 	$from = $email;
-	$subject = "from the site SpectrumWise";
+	$subject = "Message from the site Sehgal Real Estate from <$name> <$email> <$data> <$time>"    ;
     
     
 
 	$msg="
-    Name: $name /n
-    Phone: $phone /n
-    E-mai: $email /n
-    Text: $text"; 	
+    Text: $text 	
+    Name: $name
+    Phone: $tel 
+    E-mai: $email";
+    
 	mail($to, $subject, $msg, "From: $from ");
 
     

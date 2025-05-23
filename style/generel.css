@@ -183,16 +183,16 @@ body {
   font-family: "Inter";
   font-weight: 400;
   font-size: 98px;
-  leading-trim: Cap height;
   line-height: 125%;
   letter-spacing: 7px;
   color: hsla(0, 0%, 100%, 1);
 }
 .main_text_block {
   background: hsla(0, 0%, 18%, 0.5);
+ 
+  -webkit-backdrop-filter: blur(6px); 
   backdrop-filter: blur(6px);
-  width: 52%;
-  max-width: 996px;
+   max-width: 996px;
   margin-left: 70px;
   padding: 5%;
   margin-top: 133px;
@@ -231,7 +231,6 @@ body {
   font-family: "DM Sans";
   font-weight: 300;
   font-size: 18px;
-  leading-trim: Cap height;
   line-height: 100%;
   letter-spacing: 0;
   text-transform: uppercase;
@@ -245,7 +244,6 @@ body {
   font-family: "Inter";
   font-weight: 400;
   font-size: 30px;
-  leading-trim: Cap height;
   line-height: 100%;
   letter-spacing: 0;
   text-transform: uppercase;
@@ -260,7 +258,6 @@ body {
   font-family: "Inter";
   font-weight: 400;
   font-size: 18px;
-  leading-trim: Cap height;
   line-height: 150%;
   letter-spacing: 0;
   color: hsla(0, 0%, 100%, 1);
@@ -272,7 +269,6 @@ body {
   font-family: "Inter";
   font-weight: 400;
   font-size: 18px;
-  leading-trim: Cap height;
   line-height: 180%;
   letter-spacing: 0;
   color: hsla(0, 0%, 100%, 1);
@@ -416,7 +412,6 @@ body {
   font-family: "Inter";
   font-weight: 400;
   font-size: 20px;
-  leading-trim: Cap height;
   line-height: 100%;
   letter-spacing: 0;
   margin-bottom: 10px;
@@ -426,7 +421,6 @@ body {
   font-family: "Inter";
   font-weight: 400;
   font-size: 20px;
-  leading-trim: Cap height;
   line-height: 100%;
   letter-spacing: 0;
   text-transform: uppercase;
@@ -452,7 +446,6 @@ body {
   font-family: "Inter";
   font-weight: 400;
   font-size: 20px;
-  leading-trim: Cap height;
   line-height: 100%;
   letter-spacing: 0%;
   text-transform: uppercase;
@@ -467,7 +460,6 @@ body {
   font-family: "Inter";
   font-weight: 400;
   font-size: 16px;
-  leading-trim: Cap height;
   line-height: 100%;
   letter-spacing: 0;
 }
@@ -479,7 +471,6 @@ footer {
   font-family: "Inter";
   font-weight: 300;
   font-size: 16px;
-  leading-trim: Cap height;
   line-height: 100%;
   letter-spacing: 0;
   color: hsla(0, 0%, 100%, 1);
@@ -495,7 +486,6 @@ footer {
   font-family: "Montserrat";
   font-weight: 500;
   font-size: 16px;
-  leading-trim: Cap height;
   line-height: 100%;
   letter-spacing: 0%;
 }
@@ -533,7 +523,7 @@ footer {
   font-family: "Montserrat";
   font-weight: 300;
   font-size: 16px;
-  leading-trim: Cap height;
+  
   line-height: 100%;
   letter-spacing: 0;
   color: hsla(0, 0%, 100%, 1);
@@ -543,7 +533,7 @@ footer {
   font-family: "Montserrat";
   font-weight: 500;
   font-size: 16px;
-  leading-trim: Cap height;
+  
   line-height: 100%;
   letter-spacing: 0;
 }
@@ -557,13 +547,15 @@ footer {
 .main_text_b {
   display: none;
   background: hsla(0, 0%, 18%, 0.5);
+  -webkit-backdrop-filter:blur(6px);
   backdrop-filter: blur(6px);
+ 
 }
 .main_text_b h1 {
   font-family: "Inter";
   font-weight: 400;
   font-size: 75px;
-  leading-trim: Cap height;
+  
   line-height: 125%;
   letter-spacing: 7px;
   color: hsla(0, 0%, 100%, 1);
@@ -609,7 +601,7 @@ footer {
   font-family: 'Inter';
   font-weight: 400;
   font-size: 50px;
-  leading-trim: Cap height;
+  
   line-height: 100%;
   letter-spacing: 0;
   text-align: center;
@@ -621,7 +613,7 @@ footer {
   font-family: 'Inter';
   font-weight: 400;
   font-size: 20px;
-  leading-trim: Cap height;
+  
   line-height: 150%;
   letter-spacing: 0;
   text-align: center;
@@ -690,11 +682,7 @@ footer {
   .contact_in_menu {
     display: none;
   }
-  .contact_in_header {
-    display: block;
-    min-width: fit-content;
-    z-index: 0;
-  }
+
 }
 @media (min-width: 1921px) {
   .up_block {
