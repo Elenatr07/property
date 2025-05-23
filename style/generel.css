@@ -534,7 +534,7 @@ footer {
   letter-spacing: 0;
 }
 .location {
-  display: none;
+  display: block;
 }
 .social_links div {
   margin: auto 5%;
@@ -905,9 +905,7 @@ footer {
     border-bottom-left-radius: 0px;
     flex-direction: row;
   }
-  .location {
-    display: block;
-  }
+ 
   footer {
     display: none;
   }

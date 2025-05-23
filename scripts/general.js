@@ -17,7 +17,8 @@ $(document).ready(function(){
         if((width <1026)) {
          $('body').removeClass('scroll_body');
          $('#nav_shadow').removeClass("shadow");
-         $('#side-menu').prop('checked', false)
+         $('#side-menu').prop('checked', false);
+        
     } 
     })
     if(width <600){
@@ -27,8 +28,24 @@ $(document).ready(function(){
     if(width <400){
         $('.block3_header p').html('Booking for our newest Project <br> “THE SERENITY RESIDENCE“ <br> have now begun')
     }
+    if(width <1026){
+         $('.social_links').append(`    <div>
+          <a class="location" href="mailto:sehgalhomesproject@gmail.com">
+            <img src="img/mail1.svg" alt="" />
+          </a>
+        </div>
+        <div>
+          <a class="location" href="tel:+918800110831">
+            <img src="img/phone1.svg" alt="" />
+          </a>
+        </div>`)
+    }
 
 })  
+$(window).resize(function() {  
+    var widthWind = $(this).width();  
+   
+}); 
 
 
   
