@@ -20,5 +20,11 @@ $(document).ready(function(){
          $('#side-menu').prop('checked', false)
     } 
     })
-    
+    if(width <600){
+        $('.main_text_b h1').text('Building Dreams Brick By Brick')
+        $('.block3_header p').text('Booking for our newest Project “THE SERENITY RESIDENCE“ have now begun')
+    }
+    if(width <400){
+        $('.block3_header p').html('Booking for our newest Project <br> “THE SERENITY RESIDENCE“ <br> have now begun')
+    }
 })

@@ -67,7 +67,7 @@ body {
   right: 0;
   padding: 35px 20px;
   position: fixed;
-  z-index: 3;
+  z-index: 12;
   top: 5px;
   color: hsla(0, 0%, 100%, 1);
 }
@@ -437,6 +437,13 @@ body {
   height: 55px;
   border-radius: 10px;
   background: hsla(0, 2%, 72%, 1);
+  font-family: "Inter";
+  font-weight: 400;
+  font-size: 20px;
+  leading-trim: Cap height;
+  line-height: 100%;
+  letter-spacing: 0%;
+  text-transform: uppercase;
 }
 .button_active {
   background: hsla(175, 66%, 51%, 1);
@@ -646,7 +653,7 @@ footer {
   .name:first-child {
     margin: 0 auto 22px auto;
   }
- 
+
   .block2 {
     padding: 100px 80px 100px 80px;
   }
@@ -658,9 +665,9 @@ footer {
     padding: 100px 80px 100px 80px;
   }
   .contacts_info {
-   width: 45%;
+    width: 45%;
   }
-  .form_block{
+  .form_block {
     width: 55%;
   }
 }
@@ -678,11 +685,10 @@ footer {
   .block2_txt.a2 {
     width: 44%;
   }
-  .block2.a3
-   {
+  .block2.a3 {
     padding: 50px 75px 50px 75px;
   }
-  
+
   .block2_img.a1 img {
     width: 40%;
   }
@@ -705,7 +711,7 @@ footer {
   .nav {
     justify-content: start;
   }
-  
+
   .block3_items {
     margin-top: 70px;
   }
@@ -731,8 +737,7 @@ footer {
   }
   .block2,
   .block2.a3,
-  .block3
-   {
+  .block3 {
     padding: 50px 10% 50px 10%;
   }
   .contact_block {
@@ -825,9 +830,16 @@ footer {
   .button_wrapper {
     width: 100%;
   }
+  .block2_img.a1 img {
+    margin: 0;
+    width: 44%;
+  }
 }
 
 @media (max-width: 1025px) {
+  .menu {
+    width: 300px;
+  }
   .menu li a {
     color: hsla(0, 0%, 100%, 1);
   }
@@ -843,6 +855,7 @@ footer {
   .side-menu:checked ~ .hamb .hamb-line::after,
   .side-menu:checked ~ .hamb .hamb-line::before {
     background: hsla(0, 0%, 100%, 1);
+    z-index: 12;
   }
   .menu {
     justify-content: center;
@@ -869,5 +882,294 @@ footer {
   }
   .location {
     display: block;
+  }
+  footer {
+    display: none;
+  }
+  .contacts_items {
+    display: none;
+  }
+  .form_block {
+    margin-top: 50px;
+  }
+}
+@media (max-width: 950px) {
+  .main_text_b h1 {
+    font-size: 65px;
+  }
+}
+@media (max-width: 900px) {
+  .main_text_b h1 {
+    font-size: 63px;
+  }
+}
+@media (max-width: 800px) {
+  .main_text_b h1 {
+    font-size: 60px;
+  }
+}
+@media (max-width: 769px) {
+  .main_text_b h1 {
+    font-size: 58px;
+  }
+  .main_text_b {
+    padding: 50px 50px;
+  }
+  .block2,
+  .block2.a3,
+  .block3 {
+    padding: 50px 8% 50px 8%;
+  }
+  .contact_block {
+    padding: 50px 8% 100px 8%;
+  }
+  #formname,
+  #formtel,
+  #formemail {
+    font-size: 18px;
+    padding: 25px 25px;
+    height: 60px;
+  }
+  .name:first-child {
+    margin: 0 auto 20px auto;
+  }
+  .name {
+    margin: 20px auto;
+  }
+  .block3_header p {
+    width: 100%;
+  }
+  .input::placeholder {
+    font-size: 16px;
+  }
+}
+@media (max-width: 700px) {
+  .main_text_b h1 {
+    font-size: 56px;
+  }
+  .block3_item div {
+    width: 60px;
+    padding: 7px 7px;
+    display: flex;
+  }
+  .block3_item {
+    height: 60px;
+  }
+  .block3_item p {
+    margin: auto 0 auto 22px;
+  }
+}
+@media (max-width: 650px) {
+  .main_text_b h1 {
+    font-size: 54px;
+  }
+}
+@media (max-width: 600px) {
+  .main_text_b h1 {
+    font-size: 52px;
+  }
+  .main_text_b {
+    padding: 50px 40px;
+  }
+  .block2_txt h3,
+  .block3_header h3,
+  .contacts_info h3 {
+    font-size: 17px;
+  }
+  .block2_txt h2,
+  .block3_header h2,
+  .block3_txt h2,
+  .contacts_info h2 {
+    font-size: 29px;
+  }
+  .block2_txt_p,
+  .block3_header p,
+  .block3_txt p,
+  .contacts_info p,
+  .contacts_link a,
+  .item p {
+    font-size: 17px;
+  }
+  .block3_item p {
+    width: 73%;
+  }
+
+  .main_text_b {
+    margin-bottom: 0;
+  }
+  .block2_txt h2,
+  .block3_header h2,
+  .block3_txt h2,
+  .contacts_info h2 {
+    margin-bottom: 40px;
+  }
+  .block3_items {
+    margin-top: 60px;
+  }
+  .contact_block {
+    padding: 30px 8% 100px 8%;
+  }
+  #formname,
+  #formtel,
+  #formemail {
+    font-size: 17px;
+    padding: 20px 20px;
+    height: 54px;
+  }
+  .name:first-child {
+    margin: 0 auto 18px auto;
+  }
+  .name {
+    margin: 18px auto;
+  }
+}
+@media (max-width: 500px) {
+  .main_text_b h1 {
+    font-size: 51px;
+  }
+  .main_text_b {
+    padding: 50px 30px;
+  }
+}
+@media (max-width: 450px) {
+  .main_text_b h1 {
+    font-size: 50px;
+    letter-spacing: 5px;
+  }
+  .main_text_b {
+    padding: 50px 18px;
+  }
+  .block2,
+  .block2.a3,
+  .block3 {
+    padding: 50px 5% 50px 5%;
+  }
+  .block2_txt_p,
+  .block3_header p,
+  .block3_txt p,
+  .contacts_info p,
+  .contacts_link a,
+  .item p {
+    font-size: 16px;
+  }
+  .contact_block {
+    padding: 30px 5% 100px 5%;
+  }
+  .block3_img img {
+    margin: 10px auto;
+  }
+}
+@media (max-width: 409px) {
+  .main_text_b h1 {
+    font-size: 48px;
+  }
+  .block2_txt h3,
+  .block3_header h3,
+  .contacts_info h3 {
+    font-size: 16px;
+  }
+  .block2_txt h2,
+  .block3_header h2,
+  .block3_txt h2,
+  .contacts_info h2 {
+    font-size: 28px;
+  }
+  .block2_txt_p,
+  .block3_header p,
+  .block3_txt p,
+  .contacts_info p,
+  .contacts_link a,
+  .item p {
+    font-size: 15px;
+  }
+  .nav {
+    width: 300px;
+  }
+  .menu {
+    width: 260px;
+    margin: auto;
+  }
+  .header_logo img {
+    width: 260px;
+  }
+  .menu li.about_link,
+  .menu li.vision_link,
+  .menu li.project_link,
+  .menu li.contact_in_menu {
+    margin: 15px 0 15px 10px;
+  }
+}
+@media (max-width: 390px) {
+  .main_text_b h1 {
+    font-size: 46px;
+  }
+  .block2,
+  .block2.a3,
+  .block3 {
+    padding: 50px 5% 20px 5%;
+  }
+  .block2_txt h2,
+  .block3_header h2,
+  .block3_txt h2,
+  .contacts_info h2 {
+    font-size: 27px;
+  }
+  .block2_txt_p,
+  .block3_header p,
+  .block3_txt p,
+  .contacts_info p,
+  .contacts_link a,
+  .item p {
+    font-size: 14px;
+  }
+  .block3_items {
+    margin-top: 40px;
+  }
+  .powered,
+  .powered a span{
+    font-size: 12px;
+  }
+}
+@media (max-width: 360px) {
+  .main_text_b h1 {
+    font-size: 38px;
+  }
+  .block2_txt h3,
+  .block3_header h3,
+  .contacts_info h3 {
+    font-size: 15px;
+  }
+  .block2_txt_p,
+  .block3_header p,
+  .block3_txt p,
+  .contacts_info p,
+  .contacts_link a,
+  .item p {
+    font-size: 13px;
+  }
+  .block2,
+  .block2.a3,
+  .block3 {
+    padding: 50px 5% 20px 5%;
+  }
+  .contact_block {
+    padding: 30px 5% 90px 5%;
+  }
+  .nav {
+    width: 280px;
+  }
+  .menu,
+  .header_logo img  {
+    width: 240px;
+  }
+}
+@media (max-width: 350px) {
+  .block2_txt_p,
+  .block3_header p,
+  .block3_txt p,
+  .contacts_info p,
+  .contacts_link a,
+  .item p {
+    font-size: 12px;
   }
 }
