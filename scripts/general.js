@@ -40,12 +40,13 @@ $(document).ready(function(){
           </a>
         </div>`)
     }
+    $('.close').on('click', function(){
+        $('#nav_shadow').removeClass("shadow");
+        $('.result').css('display', 'none')
+    })
 
 })  
-$(window).resize(function() {  
-    var widthWind = $(this).width();  
-   
-}); 
+
 
 
   
