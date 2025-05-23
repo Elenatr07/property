@@ -27,4 +27,8 @@ $(document).ready(function(){
     if(width <400){
         $('.block3_header p').html('Booking for our newest Project <br> “THE SERENITY RESIDENCE“ <br> have now begun')
     }
-})
+
+})  
+
+
+  
