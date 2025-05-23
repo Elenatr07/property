@@ -582,6 +582,9 @@ footer {
 .link:hover:after {
   width: 100%;
 }
+.social_links div:hover{
+  transform: scale(0.95); 
+}
 
 @media (min-width: 1026px) {
   .hamb {
