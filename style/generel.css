@@ -129,8 +129,8 @@ body {
 }
 .menu li a {
   font-family: "DM Sans";
-  font-weight: 300;
-  font-size: 17px;
+  font-weight: 400;
+  font-size: 20px;
   line-height: 100%;
   letter-spacing: 0%;
   text-transform: uppercase;
@@ -554,6 +554,25 @@ footer {
   letter-spacing: 7px;
   color: hsla(0, 0%, 100%, 1);
 }
+.link {
+  position: relative;
+}
+.link::after{
+   left: 50%;
+  transform: translate(-50%);
+ 
+  position: absolute;
+  content: '';
+  bottom: 0;
+  display: block;
+  width: 0;
+  height: 2px;
+  background: #282c34;
+  transition: .3s;
+}
+.link:hover:after {
+  width: 100%;
+}
 
 @media (min-width: 1026px) {
   .hamb {
@@ -574,7 +593,7 @@ footer {
     padding: 0px;
     height: 100%;
     flex-direction: row;
-    width: 794px;
+    width: 900px;
     margin: 30px 3%;
   }
 
@@ -636,6 +655,11 @@ footer {
   }
   .menu {
     margin: 19px 3%;
+    width: 794px;
+  }
+  .menu li a{
+    font-size: 17px;
+    font-weight: 300;
   }
   .block2_txt.a2 {
     width: 51%;
