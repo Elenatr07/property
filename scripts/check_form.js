@@ -65,12 +65,14 @@ $(document).ready(function () {
       console.log("kkk");
     } else {
       $(this).css("border", "2px solid  #ff5e00");
-      console.log("error");
-    }
+       console.log("error");
+    } 
+  
   });
   $("input[type='text'], input[type='tel'], input[type='email']").on(
     "keyup",
     function () {
+      console.log(this)
       if (
         $("input[type='text']").val() != "" &&
         $("input[type='tel']").val() != "" &&
@@ -78,6 +80,10 @@ $(document).ready(function () {
       ) {
         $("#send-form").removeAttr("disabled");
         $("#send-form").addClass("button_active");
+      } else {
+        console.log('no valid')
+        $("#send-form").removeClass("button_active");
+        $('#send-form').prop('disabled', 'true')
       }
     }
   );
