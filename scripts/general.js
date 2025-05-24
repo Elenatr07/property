@@ -17,7 +17,7 @@ function scroling() {
     
   if (blockPosition1 < height1 && height1 >= blockPosition3) {
      $(".block3_item").addClass("anime1");
-     $('.block3_items').css('visibility', 'visible')
+     $('.block3_item').css('visibility', 'visible')
   }
  
 }
