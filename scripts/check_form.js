@@ -49,7 +49,7 @@ $(document).ready(function () {
   });
 
   $("input").each(function () {
-    console.log("each");
+    
     $(this).on("click", function () {
       $(this).focus();
       if ($(this).is(":focus")) {
@@ -72,9 +72,9 @@ $(document).ready(function () {
     "keyup",
     function () {
       if (
-        $(this).val() != "" &&
+        $("input[type='text']").val() != "" &&
         $("input[type='tel']").val() != "" &&
-        $("input[type='email']").val() != ""
+        $("input[type='email']").val() != "" && $(this).valid()
       ) {
         $("#send-form").removeAttr("disabled");
         $("#send-form").addClass("button_active");
