@@ -8,16 +8,24 @@ function scroling() {
   let width1 = $(window).width();
 
   console.log("height", height1);
-  // console.log("width", width1)
+  
   var blockPosition1 = $(".block3_wrapper").offset().top
   var blockPosition2 = $(".contact_block").offset().top
   var blockPosition3 = $("#vision_id").offset().top
+  var blockPosition4 = $("#about_us").offset().top
   
-   
+   // console.log('b4:' + blockPosition3, '')
     
   if (blockPosition1 < height1 && height1 >= blockPosition3) {
      $(".block3_item").addClass("anime1");
      $('.block3_item').css('visibility', 'visible')
+  }
+  if(blockPosition4 < height1 && height1>= blockPosition4){
+    $('.item').addClass('anime2');
+     $('.item').css({
+        'visibility': 'visible'
+        
+    })
   }
  
 }

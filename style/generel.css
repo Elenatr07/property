@@ -271,6 +271,9 @@ body {
 .item {
   display: flex;
   transform: translateX(0%);
+  visibility: hidden;
+     
+
 }
 .item p {
   font-family: "Inter";
@@ -378,12 +381,76 @@ body {
 .anime1:nth-child(5) {
   animation: ani 1.5s forwards 2s;
 }
+
+.anime2 {
+  transform: translateY(-150%);
+  opacity: 0;
+  animation: ani1 1s linear forwards
+
+  
+ 
+}
+.anime2:nth-child(1){
+  animation: ani1 0.6s linear  forwards;
+  transform: translateY(-150%);
+  
+  
+}
+.anime2:nth-child(2){
+  animation: ani1 0.6s linear  forwards;
+  transform: translateY(-140%);
+  animation-delay: 0.5s
+  
+}
+.anime2:nth-child(3){
+  animation: ani1 0.6s linear  forwards;
+  transform: translateY(-120%);
+  animation-delay: 1s
+ 
+}
+.anime2:nth-child(4){
+  animation: ani1 0.6s linear  forwards;
+  transform: translateY(-100%);
+  animation-delay: 1.5s
+}
+.anime2:nth-child(5){
+  animation: ani1 0.6s linear  forwards ;
+  transform: translateY(-80%);
+  animation-delay: 2s
+}
+.anime2:nth-child(6){
+  animation: ani1 0.6s linear  forwards ;
+  transform: translateY(-60%);
+  animation-delay: 2.5s
+}
+.anime2:nth-child(7){
+  animation: ani1 0.6s linear  forwards ;
+  transform: translateY(-40%);
+  animation-delay: 3s
+}
+.anime2:nth-child(8){
+  animation: ani1 0.6s linear  forwards ;
+  transform: translateY(-20%);
+  animation-delay: 3.5s
+}
+.anime2:nth-child(9){
+  animation: ani1 0.6s linear  forwards ;
+  transform: translateY(-10%);
+  animation-delay: 4s
+}
 .block3_item:last-child {
   margin: 0;
 }
 @keyframes ani {
   0% {transform: translateX(150%);}
   100% {transform: translateY(0);}
+}
+@keyframes ani1 {
+  0% {transform: translateY(-150%);
+  opacity: 0; }
+ 
+  100% {transform: translateY(0);
+  opacity: 1; }
 }
 
 .block3_item p {
@@ -1199,7 +1266,7 @@ footer {
     letter-spacing: 4px;
   }
   .main_text_b {
-    padding: 50px 18px;
+    padding: 30px 18px;
   }
   .block2,
   .block2.a3,
