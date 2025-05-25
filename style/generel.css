@@ -555,10 +555,14 @@ body {
   line-height: 100%;
   letter-spacing: 0%;
   text-transform: uppercase;
+  cursor: none;
 }
 .button_active {
   background: hsla(175, 66%, 51%, 1);
   cursor: pointer;
+}
+.button_active:hover{
+  transform: scale(0.95);
 }
 .error {
   color: #ff5e00;
@@ -753,6 +757,12 @@ footer {
 }
 .result div {
   margin: 30px;
+}
+#email_a:hover,
+#powered_a:hover{
+  color:#30D5C8;
+  transform: scale(0.98);
+
 }
 
 
