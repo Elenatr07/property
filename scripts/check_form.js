@@ -5,7 +5,7 @@ $(document).ready(function () {
     var form = $(this).closest("form");
 
     if (form.valid()) {
-    //  form.css("opacity", ".5");
+      //  form.css("opacity", ".5");
       var actUrl = form.attr("action");
 
       jQuery.ajax({
@@ -15,27 +15,27 @@ $(document).ready(function () {
         data: form.serialize(),
         success: function (data) {
           //form.html(data);
-         // form.css("opacity", "1");
+          // form.css("opacity", "1");
           // form.find(".status").html("form submitted successfully");
-			$('#nav_shadow').addClass("shadow");  
+          $("#nav_shadow").addClass("shadow");
           form.find(".status").css("opacity", "1");
           $(".result div").html(`<h3>Success!</h3>
             <p>
               Thank you! We've received your contact details and will get back
               to you as soon as possible.
             </p>`);
-			$('.result').css('display', 'block');
+          $(".result").css("display", "block");
           //$('#myModal').modal('show') // для бутстрапа
         },
 
         error: function () {
           form.find(".status").html("Error");
-		  $('#nav_shadow').addClass("shadow");  
-		     $(".result div").html(`<h3>Oops...</h3>
+          $("#nav_shadow").addClass("shadow");
+          $(".result div").html(`<h3>Oops...</h3>
             <p>
              Something went wrong. Please try again or contact us through another method.
             </p>`);
-			$('.result').css('display', 'block');
+          $(".result").css("display", "block");
         },
       });
     }
@@ -49,7 +49,6 @@ $(document).ready(function () {
   });
 
   $("input").each(function () {
-    
     $(this).on("click", function () {
       $(this).focus();
       if ($(this).is(":focus")) {
@@ -65,25 +64,25 @@ $(document).ready(function () {
       console.log("kkk");
     } else {
       $(this).css("border", "2px solid  #ff5e00");
-       console.log("error");
-    } 
-  
+      console.log("error");
+    }
   });
   $("input[type='text'], input[type='tel'], input[type='email']").on(
     "keyup",
     function () {
-      console.log(this)
+      console.log(this);
       if (
         $("input[type='text']").val() != "" &&
         $("input[type='tel']").val() != "" &&
-        $("input[type='email']").val() != "" && $(this).valid()
+        $("input[type='email']").val() != "" &&
+        $(this).valid()
       ) {
         $("#send-form").removeAttr("disabled");
         $("#send-form").addClass("button_active");
       } else {
-        console.log('no valid')
+        console.log("no valid");
         $("#send-form").removeClass("button_active");
-        $('#send-form').prop('disabled', 'true')
+        $("#send-form").prop("disabled", "true");
       }
     }
   );
@@ -93,7 +92,7 @@ function clearform() {
   $("#formname").val("");
   $("#formemail").val("");
   $("#formtel").val("");
-  $('input').css('border', '2px solid hsla(0, 2%, 72%, 1)' );
+  $("input").css("border", "2px solid hsla(0, 2%, 72%, 1)");
   $("#send-form").attr("disabled");
-   $("#send-form").removeClass("button_active");
+  $("#send-form").removeClass("button_active");
 }
